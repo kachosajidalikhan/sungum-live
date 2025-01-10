@@ -41,13 +41,10 @@ const EventBookingPage = () => {
     };
 
     return (
-        <div className="flex w-full pt-6 bg-[#c2c3c7]">
-            <div className="w-[40%] hidden lg:block">
-                <img src="images/image_6.jpg" alt="" />
-            </div>
+        <div className="flex w-full p-8 bg-gray-200 justify-center">
             <form
                 onSubmit={handleSubmit(onSubmit)}
-                className="p-2  lg:p-6 md:p-4 flex flex-col justify-center items-center bg-white w-[100%] m-2 lg:w-[50%] lg:m-auto rounded-xl shadow-lg"
+                className="p-2  lg:p-6 md:p-4 flex flex-col justify-center items-center bg-white w-[100%] m-2 lg:w-[80%] lg:m-auto rounded-xl shadow-lg"
             >
                 <h1 className="md:text-3xl text-lg text-[#c59a63] font-bold mb-4">Event Booking Page</h1>
 

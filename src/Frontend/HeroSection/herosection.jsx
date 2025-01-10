@@ -1,6 +1,7 @@
 import { useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./hero.css";
+import {files} from '../../constants/index'
 
 export default function Hero() {
   const videoRef = useRef(null);
@@ -30,7 +31,7 @@ export default function Hero() {
           loop
           playsInline
         >
-          <source src="video.mp4" type="video/mp4" />
+          <source src={files.video} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 

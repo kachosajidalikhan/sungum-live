@@ -1,15 +1,16 @@
 import React, { useState } from "react";
+import {files} from '../../constants/index'
+
 
 const galleryImages = [
-  { src: "images/room-1.jpg", alt: "Luxurious hotel room", category: "Rooms" },
-  { src: "images/image_1.jpg", alt: "Elegant event hall", category: "Events" },
-  { src: "images/room-1.jpg", alt: "Modern conference room", category: "Events" },
-  { src: "images/person_1.jpg", alt: "Relaxing spa area", category: "Events" },
-  { src: "images/menu-1.jpg", alt: "Gourmet restaurant", category: "Events" },
-  { src: "images/insta-1.jpg", alt: "Outdoor swimming pool", category: "Rooms" },
-  { src: "images/room-1.jpg", alt: "Scenic hotel exterior", category: "Rooms" },
-  { src: "images/menu-3.jpg", alt: "Cozy hotel bar", category: "Rooms" },
-  { src: "images/room-2.jpg", alt: "Spacious suite", category: "Rooms" },
+  { src: files.about_1, alt: "Luxurious hotel room", category: "Rooms" },
+  { src: files.about_2, alt: "Double bed", category: "Rooms" },
+  { src: files.birthday, alt: "Birthday hall", category: "Events" },
+  { src: files.wedding, alt: "Relaxing wedding area", category: "Events" },
+  { src: files.conference, alt: "Meeting Hall", category: "Events" },
+  { src: files.image_1, alt: "Outdoor setting", category: "Events" },
+  { src: files.other, alt: "Other hall", category: "Events" },
+  { src: files.bg_4, alt: "Cozy hotel room", category: "Rooms" },
 ];
 
 function Gallery() {

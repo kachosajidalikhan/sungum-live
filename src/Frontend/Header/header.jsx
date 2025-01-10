@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import {files} from '../../constants/index'
 
 const Header = () => {
   // State to track if the menu is open
@@ -23,14 +24,14 @@ const Header = () => {
           <div className="md:hidden w-16">
           <Link to="/" >
             {/* Sun<span className="text-blue-500">Gam</span> */}
-            <img src="/images/Sungam3.png" alt="" className="w-full" />
+            <img src={files.Sungam3} alt="" className="w-full" />
           </Link>
           </div>
 
         <div className="hidden md:block w-36">
         <Link to="/" >
           {/* Sun<span className="text-blue-500">Gam</span> */}
-          <img src="/images/Sungam.png" alt="" className="w-full" />
+          <img src={files.Sungam} alt="" className="w-full" />
         </Link>
         </div>
         

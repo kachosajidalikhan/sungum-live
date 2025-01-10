@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom"
+import {files} from '../../constants/index'
 
 
 export default ()=>{
     return<>
     <footer
   className="ftco-footer relative bg-cover bg-center bg-no-repeat"
-  style={{ backgroundImage: "url('/images/bg_4.jpg')" }}
+  style={{ backgroundImage: `url(${files.bg_4})` }}
 >
 <div class="overlay"></div>
   <div className="absolute inset-0  opacity-50"></div>
@@ -140,19 +141,19 @@ export default ()=>{
           <li>
             <span className="icon-phone mr-2 text-blue-400"></span>
             <a
-              href="tel:058453131"
+              href="tel:05815453131"
               className="text-gray-300 hover:text-white transition duration-300 text-sm"
             >
-              058453131
+              05815453131
             </a>
           </li>
           <li>
             <span className="icon-envelope mr-2 text-blue-400"></span>
             <a
-              href="mailto:info@sungumcompany.com"
+              href="mailto:Sangaam786@gmail.com"
               className="text-gray-300 hover:text-white transition duration-300 text-sm"
             >
-              info@sungumcompany.com
+              Sangaam786@gmail.com
             </a>
           </li>
         </ul>

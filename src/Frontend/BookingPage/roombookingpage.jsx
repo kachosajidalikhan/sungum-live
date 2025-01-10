@@ -4,6 +4,8 @@ import { useForm } from "react-hook-form";
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 // import { useSelector } from "react-redux";
+import {files} from '../../constants/index'
+
 
 const RoomBookingPage = () => {
   const { roomNo } = useParams();
@@ -39,27 +41,6 @@ const RoomBookingPage = () => {
   const handleCountryChange = (e) => {
     setSelectedCountry(e.target.value);
   };
-  //   const params = useParams();
-  //   let currentUser = useSelector((store) => store.userSection.currentUser);
-  //   console.log(currentUser);
-
-  //   useEffect(() => {
-  //     const fetchRoom = async () => {
-  //       try {
-  //         const resp = await axios.get("/get-rooms");
-  //         const room = resp.data.find((room) => room._id === params.roomid);
-  //         setRoom(room);
-  //       } catch (e) {
-  //         console.log(e);
-  //       }
-  //     };
-
-  //     fetchRoom();
-  //   }, [params.roomid]);
-
-  //   if (!room) {
-  //     return <div>Loading...</div>;
-  //   }
 
   const room_name = 'Family Suit';
   const roomPrice = 4000;
@@ -76,37 +57,6 @@ const RoomBookingPage = () => {
     nav("/room-payment-page", { state: { data } });
   };
 
-  //   const userData = async (data) => {
-  //     data.roomName = roomName;
-  //     data.roomPrice = roomPrice;
-  //     data.userId = userId;
-  //     console.log("Data sent to the backend:", data);
-
-  //     try {
-  //       const response = await axios.post("/booking-detail", {
-  //         ...data,
-  //         checkIn: new Date(data.checkIn),
-  //         checkOut: new Date(data.checkOut),
-  //       });
-
-  //       if (response.status === 200) {
-  //         const bookingDetail = response.data.bookingDetail;
-  //         if (bookingDetail && bookingDetail._id) {
-  //           const bookingId = bookingDetail._id;
-  //           console.log("Booking ID:", bookingId);
-  //           nav(`/bookingdetail/${bookingId}`);
-  //         } else {
-  //           console.error("Booking detail does not contain an ID");
-  //         }
-  //       }
-  //     } catch (error) {
-  //       console.error(
-  //         "Error booking room:",
-  //         error.response ? error.response.data : error.message
-  //       );
-  //     }
-  //   };
-
   return (
     <>
       <div className="container mt-8 mb-4 mx-auto py-10">
@@ -121,7 +71,7 @@ const RoomBookingPage = () => {
             <div className="hidden lg:block">
               <img
                 className="img-fluid rounded w-75 wow zoomIn"
-                src="/images/about-1.jpg"
+                src={files.about_1}
                 alt="Room Image"
               />
             </div>
@@ -172,7 +122,7 @@ const RoomBookingPage = () => {
                       type="number"
                       className="w-full p-2 focus:outline-none rounded"
                     />
-                    {errors.phone && <p className="text-red-500 text-sm">Please Enter Your Phone Number!</p>}
+                    {errors .phone && <p className="text-red-500 text-sm">Please Enter Your Phone Number!</p>}
                   </div>
                 </div>
 

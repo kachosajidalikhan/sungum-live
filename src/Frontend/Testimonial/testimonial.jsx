@@ -1,6 +1,7 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
+import {files} from '../../constants/index'
 
 export default () => {
   return (
@@ -10,7 +11,7 @@ export default () => {
           <div className="w-full md:w-1/2 flex-shrink-0">
             <div
               className="h-80 md:h-[24rem] bg-cover bg-center rounded-lg shadow"
-              style={{ backgroundImage: "url('/images/testimony-img.jpg')" }}
+              style={{ backgroundImage: `url(${files.testimony_img})` }}
             ></div>
           </div>
           <div className="w-full md:w-1/2 px-6 md:px-10">

@@ -57,11 +57,11 @@ export default function ContactUs() {
                 </div>
                 <div className="flex items-center">
                   <Phone className="mr-3 h-6 w-6 text-[#c59a63]" />
-                  <p className="text-gray-600">058453131</p>
+                  <p className="text-gray-600">05815453131</p>
                 </div>
                 <div className="flex items-center">
                   <Mail className="mr-3 h-6 w-6 text-[#c59a63]" />
-                  <p className="text-gray-600">info@sungumcompany.com</p>
+                  <p className="text-gray-600">Sangaam786@gmail.com</p>
                 </div>
               </div>
             </div>
