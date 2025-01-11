@@ -1,4 +1,6 @@
 import { Star } from 'lucide-react';
+import {files} from '../../constants/index'
+
 
 export default function Services() {
   return (
@@ -44,21 +46,21 @@ export default function Services() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
           <div className="aspect-video rounded-lg overflow-hidden">
             <img
-              src="images/conference.jpg"
+              src={files.conference}
               alt="Event decoration with purple lighting"
               className="w-full h-full object-cover"
             />
           </div>
           <div className="aspect-video rounded-lg overflow-hidden">
             <img
-              src="images/wedding.jpg"
+              src={files.wedding}
               alt="Elegant chandelier decoration"
               className="w-full h-full object-cover"
             />
           </div>
           <div className="aspect-video rounded-lg overflow-hidden">
             <img
-              src="images/birthday.jpg"
+              src={files.birthday}
               alt="Event space with draping and lighting"
               className="w-full h-full object-cover"
             />
