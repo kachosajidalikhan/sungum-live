@@ -303,12 +303,13 @@ const PaymentPage = () => {
                             </p>
                         </div>
                         <div className="text-center mt-4">
-                            <button
+                            <a
                                 onClick={() => setIsModalOpen(false)}
+                                href="/"
                                 className="px-4 py-2 bg-[#c59a63] text-[#293941] hover:text-[#c59a63] rounded hover:bg-[#293941] focus:outline-none"
                             >
                                 Close
-                            </button>
+                            </a>
                         </div>
                     </div>
                 </div>
