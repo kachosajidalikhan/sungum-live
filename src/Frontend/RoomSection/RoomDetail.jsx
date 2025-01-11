@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules"; // Import Navigation module
 import { useNavigate } from "react-router";
 import { useParams } from "react-router-dom";
+import {files} from '../../constants/index'
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -17,7 +18,7 @@ const RoomDetail = () => {
         {
             roomId: 1,
             roomNo: 101,
-            imageUrl: ["room-4.jpg", "room-5.jpg", "room-6.jpg", "room-3.jpg"],
+            imageUrl: [files.room1, files.room2,  files.room3, files.room4],
             title: "King Room",
             price: 10000,
             roomStatus: 'Available',
@@ -26,7 +27,7 @@ const RoomDetail = () => {
         {
             roomId: 2,
             roomNo: 102,
-            imageUrl: ["room-4.jpg", "room-5.jpg", "room-6.jpg", "room-3.jpg"],
+            imageUrl: [files.room1, files.room2,  files.room3, files.room4],
             title: "Suite Room",
             price: 5000,
             roomStatus: 'Available',
@@ -35,7 +36,7 @@ const RoomDetail = () => {
         {
             roomId: 3,
             roomNo: 103,
-            imageUrl: ["room-4.jpg", "room-5.jpg", "room-6.jpg", "room-3.jpg"],
+            imageUrl: [files.room1, files.room2,  files.room3, files.room4],
             title: "Family Room",
             price: 12000,
             roomStatus: 'Booked',
@@ -45,7 +46,7 @@ const RoomDetail = () => {
         {
             roomId: 4,
             roomNo: 104,
-            imageUrl: ["room-4.jpg", "room-5.jpg", "room-6.jpg", "room-3.jpg"],
+            imageUrl: [files.room1, files.room2,  files.room3, files.room4],
             title: "Deluxe Room",
             price: 8000,
             roomStatus: 'Available',
@@ -55,7 +56,7 @@ const RoomDetail = () => {
         {
             roomId: 5,
             roomNo: 105,
-            imageUrl: ["room-4.jpg", "room-5.jpg", "room-6.jpg", "room-3.jpg"],
+            imageUrl: [files.room1, files.room2,  files.room3, files.room4],
             title: "Luxury Room",
             price: 10000,
             roomStatus: 'Available',
@@ -65,7 +66,7 @@ const RoomDetail = () => {
         {
             roomId: 6,
             roomNo: 106,
-            imageUrl: ["room-4.jpg", "room-5.jpg", "room-6.jpg", "room-3.jpg"],
+            imageUrl: [files.room1, files.room2,  files.room3, files.room4],
             title: "Superior Room",
             price: 6000,
             roomStatus: 'Booked',
@@ -104,7 +105,7 @@ const RoomDetail = () => {
                         {images.map((image, index) => (
                             <SwiperSlide key={index}>
                                 <img
-                                    src={`/images/${image}`}
+                                    src={`${image}`}
                                     alt={`Room ${index + 1}`}
                                     className="w-full h-full object-cover"
                                 />
@@ -117,7 +118,7 @@ const RoomDetail = () => {
                         {images.slice(1).map((image, index) => (
                             <div key={index} className="relative w-full h-[100px]">
                                 <img
-                                    src={`/images/${image}`}
+                                    src={`${image}`}
                                     alt={`Thumbnail ${index + 1}`}
                                     className="w-full h-full object-cover rounded-lg"
                                 />

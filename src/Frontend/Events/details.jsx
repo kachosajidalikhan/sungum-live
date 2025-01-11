@@ -5,6 +5,7 @@ import { MdDescription } from 'react-icons/md';
 import { FaSackDollar } from 'react-icons/fa6';
 import Slider from "react-slick";
 import { useNavigate } from 'react-router';
+import {files} from "../../constants/index"
 
 const Details = ({ event }) => {
     const navigate = useNavigate()
@@ -102,28 +103,28 @@ const Details = ({ event }) => {
                     <Slider {...settings}>
                         <div>
                             <img
-                                src="/images/room-4.jpg"
+                                src= {files.birthday}
                                 alt="Room 4"
                                 className="w-full h-auto rounded-md shadow-md"
                             />
                         </div>
                         <div>
                             <img
-                                src="/images/room-1.jpg"
+                                src={files.wedding}
                                 alt="Room 1"
                                 className="w-full h-auto rounded-md shadow-md"
                             />
                         </div>
                         <div>
                             <img
-                                src="/images/room-2.jpg"
+                                src={files.conference}
                                 alt="Room 2"
                                 className="w-full h-auto rounded-md shadow-md"
                             />
                         </div>
                         <div>
                             <img
-                                src="/images/room-3.jpg"
+                                src={files.other}
                                 alt="Room 3"
                                 className="w-full h-auto rounded-md shadow-md"
                             />

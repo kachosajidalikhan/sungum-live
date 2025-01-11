@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router";
+import {files} from '../../constants/index';
 
 const RoomCard = ({ imageUrl, title, price, detailsLink,roomId,roomNo }) => {
   const nav = useNavigate();
@@ -41,7 +42,7 @@ const RoomsSection = () => {
     {
       roomId: 1,
       roomNo: 101,
-      imageUrl: "images/room-6.jpg",
+      imageUrl: files.room1,
       title: "King Room",
       price: 10000,
       roomStatus: 'Available',
@@ -50,7 +51,7 @@ const RoomsSection = () => {
     {
       roomId: 2,
       roomNo: 102,
-      imageUrl: "images/room-1.jpg",
+      imageUrl: files.room2,
       title: "Suite Room",
       price: 5000,
       roomStatus: 'Available',
@@ -59,7 +60,7 @@ const RoomsSection = () => {
     {
       roomId: 3,
       roomNo: 103,
-      imageUrl: "images/room-2.jpg",
+      imageUrl: files.room3,
       title: "Family Room",
       price: 12000,
       roomStatus: 'Booked',
@@ -69,7 +70,7 @@ const RoomsSection = () => {
     {
       roomId: 4,
       roomNo: 104,
-      imageUrl: "images/room-3.jpg",
+      imageUrl: files.room4,
       title: "Deluxe Room",
       price: 8000,
       roomStatus: 'Available',
@@ -79,7 +80,7 @@ const RoomsSection = () => {
     {
       roomId: 5,
       roomNo: 105,
-      imageUrl: "images/room-4.jpg",
+      imageUrl: files.room5,
       title: "Luxury Room",
       price: 10000,
       roomStatus: 'Available',
@@ -89,7 +90,7 @@ const RoomsSection = () => {
     {
       roomId: 6,
       roomNo: 106,
-      imageUrl: "images/room-5.jpg",
+      imageUrl: files.room6,
       title: "Superior Room",
       price: 6000,
       roomStatus: 'Booked',

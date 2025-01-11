@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router";
+import {files} from "../../constants/index"
 
 const EventCard = ({ imageUrl, title, price, detailsLink,eventId }) => {
   const nav = useNavigate();
@@ -39,25 +40,25 @@ const EventsSection = () => {
   const events = [
     {
       eventId: 1,
-      imageUrl: "images/birthday.jpg",
+      imageUrl: files.birthday,
       title: "Birthday Celebration",
       price: 25000,
     },
     {
       eventId: 2,
-      imageUrl: "images/wedding.jpg",
+      imageUrl: files.wedding,
       title: "Marrage Cermany",
       price: 25000,
     },
     {
       eventId: 3,
-      imageUrl: "images/conference.jpg",
+      imageUrl: files.conference,
       title: "Conference Hall",
       price: 25000,
     },
     {
       eventId: 4,
-      imageUrl: "images/other.jpg",
+      imageUrl: files.other,
       title: "Other Events",
       price: 25000,
     },
